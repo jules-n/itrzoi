@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<drink>
+    <characteristics>
+        <name>IBU</name>
+        <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:float">30.0</value>
+    </characteristics>
+    <characteristics>
+        <name>ABV</name>
+        <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:float">13.0</value>
+    </characteristics>
+    <id>7c7ecf15-cc86-4455-b7d8-6ef96d8e6e4a</id>
+    <name>Old Speckled Hen</name>
+    <price>89.0</price>
+    <volume>0.4</volume>
+</drink>

@@ -1,0 +1,55 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'com.nure.br4'
+version '0.0.1'
+repositories {
+    mavenCentral()
+}
+
+springBoot {
+    buildInfo()
+}
+
+dependencies {
+
+    //spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.projectlombok:lombok:1.18.20'
+
+    //lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //testing
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.assertj:assertj-core'
+
+    //jackson
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.13.0'
+
+
+    //javax
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
+    implementation 'com.sun.xml.bind:jaxb-ri:2.3.3'
+    implementation 'javax.json:javax.json-api:1.1.4'
+    implementation 'org.json:json:20210307'
+
+    //html
+    implementation 'com.github.xmlet:htmlflow:3.8'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
