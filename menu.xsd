@@ -1,0 +1,75 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="menu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="drink" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="characteristics">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="drink" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="name"/>
+                                                    <xs:element type="xs:float" name="value"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="null" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="components">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="drink" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:float" name="amount"/>
+                                                    <xs:element name="drink">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="characteristics">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string" name="null" use="optional"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="components">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute type="xs:string" name="null" use="optional"/>
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element type="xs:string" name="id"/>
+                                                                <xs:element type="xs:string" name="name"/>
+                                                                <xs:element type="xs:float" name="price"/>
+                                                                <xs:element type="xs:float" name="volume"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="null" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="id"/>
+                            <xs:element type="xs:string" name="name"/>
+                            <xs:element type="xs:float" name="price"/>
+                            <xs:element type="xs:float" name="volume"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

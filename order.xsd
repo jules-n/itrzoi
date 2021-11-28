@@ -1,0 +1,32 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="order">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element type="xs:byte" name="place"/>
+            <xs:element name="positions">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="position" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element type="xs:string" name="drinkName"/>
+                                    <xs:element type="xs:byte" name="number"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="status">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="JustCreated"/>
+                        <xs:enumeration value="Pending"/>
+                        <xs:enumeration value="Ready"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+        </xs:schema>

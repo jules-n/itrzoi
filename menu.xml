@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <drink>
+        <characteristics null="true" />
+        <components null="true" />
+        <id>a79174f6-5209-4ffc-ba2f-a48a3376b5dc</id>
+        <name>Coca-Cola</name>
+        <price>12.0</price>
+        <volume>0.5</volume>
+    </drink>
+    <drink>
+        <characteristics null="true" />
+        <components null="true" />
+        <id>93299368-8faa-47dc-967d-36f9f0887ddc</id>
+        <name>Tonic Everves</name>
+        <price>18.0</price>
+        <volume>0.5</volume>
+    </drink>
+    <drink>
+        <characteristics null="true" />
+        <components null="true" />
+        <id>2be8ddea-60af-4999-a6df-555fed45ce62</id>
+        <name>London dry gin</name>
+        <price>85.0</price>
+        <volume>0.1</volume>
+    </drink>
+    <drink>
+        <characteristics>
+            <drink>
+                <name>ABV</name>
+                <value>15.0</value>
+            </drink>
+        </characteristics>
+        <components>
+            <drink>
+                <amount>0.15</amount>
+                <drink>
+                    <characteristics null="true" />
+                    <components null="true" />
+                    <id>93299368-8faa-47dc-967d-36f9f0887ddc</id>
+                    <name>Tonic Everves</name>
+                    <price>18.0</price>
+                    <volume>0.5</volume>
+                </drink>
+            </drink>
+            <drink>
+                <amount>0.05</amount>
+                <drink>
+                    <characteristics null="true" />
+                    <components null="true" />
+                    <id>2be8ddea-60af-4999-a6df-555fed45ce62</id>
+                    <name>London dry gin</name>
+                    <price>85.0</price>
+                    <volume>0.1</volume>
+                </drink>
+            </drink>
+        </components>
+        <id>59079ddb-d9cb-48dd-9f3e-b060637484bf</id>
+        <name>Gin tonic</name>
+        <price>100.0</price>
+        <volume>0.25</volume>
+    </drink>
+    <drink>
+        <characteristics>
+            <drink>
+                <name>ABV</name>
+                <value>11.5</value>
+            </drink>
+            <drink>
+                <name>IBU</name>
+                <value>18.0</value>
+            </drink>
+        </characteristics>
+        <components null="true" />
+        <id>25f1abed-e798-49a5-81a8-4b36a320f4a5</id>
+        <name>Harp</name>
+        <price>87.0</price>
+        <volume>0.4</volume>
+    </drink>
+    <drink>
+        <characteristics>
+            <drink>
+                <name>ABV</name>
+                <value>11.5</value>
+            </drink>
+            <drink>
+                <name>IBU</name>
+                <value>18.0</value>
+            </drink>
+        </characteristics>
+        <components null="true" />
+        <id>1305b22a-2648-4cd5-88ff-9340a660822c</id>
+        <name>Harp</name>
+        <price>56.0</price>
+        <volume>0.25</volume>
+    </drink>
+    <drink>
+        <characteristics>
+            <drink>
+                <name>IBU</name>
+                <value>30.0</value>
+            </drink>
+            <drink>
+                <name>ABV</name>
+                <value>13.0</value>
+            </drink>
+        </characteristics>
+        <components null="true" />
+        <id>7c7ecf15-cc86-4455-b7d8-6ef96d8e6e4a</id>
+        <name>Old Speckled Hen</name>
+        <price>89.0</price>
+        <volume>0.4</volume>
+    </drink>
+</menu>

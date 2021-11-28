@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+    <place>5</place>
+    <positions>
+        <position>
+            <drinkName>Old Speckled Hen</drinkName>
+            <number>4</number>
+        </position>
+        <position>
+            <drinkName>Gin tonic</drinkName>
+            <number>2</number>
+        </position>
+    </positions>
+</order>
