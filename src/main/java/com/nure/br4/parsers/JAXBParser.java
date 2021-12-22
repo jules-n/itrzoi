@@ -1,17 +1,13 @@
 package com.nure.br4.parsers;
 
 import lombok.SneakyThrows;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Service;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import java.io.File;
 import java.io.FileReader;
 
-@Service
-@Primary
-public class JAXBParser implements IParser{
+public class JAXBParser implements IParser {
 
     @SneakyThrows
     public void marshal(Class toParseClass, Object instance, String fileName) {

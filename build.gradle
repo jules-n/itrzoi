@@ -16,13 +16,14 @@ springBoot {
 
 dependencies {
 
-    //spring
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.projectlombok:lombok:1.18.20'
-
     //lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    //jws
+    implementation 'javax.jws:jsr181-api:1.0-MR1'
+    implementation 'javax.xml.ws:jaxws-api:2.3.1'
+    implementation 'com.sun.xml.ws:rt:2.3.1'
 
     //testing
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
