@@ -3,12 +3,13 @@ package com.nure.br4.domain.models;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.*;
-import org.springframework.lang.Nullable;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.List;
 import java.util.Objects;
-import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -22,14 +23,21 @@ import java.util.UUID;
         @JsonSubTypes.Type(value = Characteristic.class, name = "characteristics"),
         @JsonSubTypes.Type(value = Component.class, name = "components")
 })
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Drink", propOrder = {
+        "id",
+        "name",
+        "volume",
+        "characteristics",
+        "price",
+        "components"
+})
 public class Drink {
     private String id;
     private String name;
     private float volume;
-    @Nullable
     private List<Characteristic> characteristics;
     private float price;
-    @Nullable
     private List<Component> components;
 
     @Override
